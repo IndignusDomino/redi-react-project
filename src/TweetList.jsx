@@ -12,3 +12,9 @@ function TweetList({ tweets }) {
 }
 
 export default TweetList;
+
+const { tweets, searchTerm } = useContext(TweetContext);
+
+const filteredTweets = tweets.filter(tweet => 
+  tweet.content.toLowerCase().includes(searchTerm.toLowerCase())
+);
