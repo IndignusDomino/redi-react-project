@@ -40,3 +40,36 @@
 .read-the-docs {
   color: #888;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.content {
+  margin-left: 220px;
+  padding: 20px;
+  flex: 1;
+}
